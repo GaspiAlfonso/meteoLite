@@ -66,7 +66,7 @@ visualtm(datos)
 ```
 
 <figure>
-<img src="figures/grafico_visualtm.png"
+<img src="inst/figures/grafico_visualtm.png"
 alt="Gráfico de temperatura mensual" />
 <figcaption aria-hidden="true">Gráfico de temperatura
 mensual</figcaption>
