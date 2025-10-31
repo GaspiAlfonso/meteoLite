@@ -26,6 +26,17 @@ You can install the development version of meteoLite from
 pak::pak("GaspiAlfonso/meteoLite")
 ```
 
+### ¿Qué hacer primero?
+
+Primero que nada deberá cargarse el paquete meteoLite de la siguiente
+forma:
+
+``` r
+library(meteoLite)
+```
+
+Luego, deberás:
+
 ### Descarga de Datos:
 
 Para poder descargar datasets sobre las estaciones meteorológicas se
@@ -34,7 +45,7 @@ diseño una función.
 **‘descarga_data’**: toma como parámetro la estación que se desee
 descargar, y la ruta donde se guardará la misma.
 
-### Funciones:
+### Funciones meteoLite:
 
 1.  **visualtm**: Esta función recibe un data frame con una estación
     meteorológica que luego se encargará de gráficar la temperatura
@@ -45,18 +56,9 @@ descargar, y la ruta donde se guardará la misma.
     generará una tabla con resumen estadístico para una o más estaciones
     meteorológicas.
 
-## Ejemplo
-
-Este es un ejemplo básico que muestra cómo instalar la librería del
-paquete:
-
-``` r
-library(meteoLite)
-```
-
 ## Uso de funciones:
 
-#### A continuación se mostrará un ejemplo de cómo hacer uso de la función `visualtm` :
+#### A continuación se puede ver un ejemplo de cómo hacer uso de la función `visualtm` :
 
 ``` r
 datos <- descarga_data("NH0472", "datosmeteo/NH0472.csv")
@@ -94,10 +96,9 @@ visita nuestra página web:
     proyecto con una descripción comprensible del propósito de la
     contribución que realizaste.
 
-Si tenés dudas o requerías de ayuda sobre constribuciones, contactános:
+Si tenés dudas o requerías de ayuda sobre constribuciones, aquí te
+brindamos los contactos:
 
 \- **Alfonso Gaspar**: <galfonso1@mail.austral.edu.ar>
 
 \- **Ingmar Bakker**: <ingmarbakker@mail.austral.edu.ar>
-
-#### Código de constribución:
