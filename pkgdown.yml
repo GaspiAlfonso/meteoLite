@@ -2,7 +2,7 @@ pandoc: 3.1.11
 pkgdown: 2.1.3
 pkgdown_sha: ~
 articles: {}
-last_built: 2025-10-31T22:08Z
+last_built: 2025-10-31T23:53Z
 urls:
   reference: https://gaspialfonso.github.io/meteoLite/reference
   article: https://gaspialfonso.github.io/meteoLite/articles
