@@ -14,10 +14,7 @@ coverage](https://codecov.io/gh/GaspiAlfonso/meteoLite/graph/badge.svg)](https:/
 
 Paquete de prueba para lectura y análisis de datos meteorológicos.
 
-⚠️ Este paquete está en desarrollo y no está pensado aún para uso
-productivo.
-
-Proximamente verás nuevas actualizaciones …
+Proximamente estará disponible para su uso …
 
 ## Instalación
 
@@ -37,6 +34,17 @@ diseño una función.
 **‘descarga_data’**: toma como parámetro la estación que se desee
 descargar, y la ruta donde se guardará la misma.
 
+### Funciones:
+
+1.  **visualtm**: Esta función recibe un data frame con una estación
+    meteorológica que luego se encargará de gráficar la temperatura
+    mensual de la misma.
+
+2.  **tabla_resume_temperatura**: función que recibe un data frame con
+    la estación meteorológica y su temperatura_abrigo, a partir de ello,
+    generará una tabla con resumen estadístico para una o más estaciones
+    meteorológicas.
+
 ## Ejemplo
 
 Este es un ejemplo básico que muestra cómo instalar la librería del
@@ -45,6 +53,26 @@ paquete:
 ``` r
 library(meteoLite)
 ```
+
+## Uso de funciones:
+
+#### A continuación se mostrará un ejemplo de cómo hacer uso de la función `visualtm` :
+
+``` r
+datos <- descarga_data("NH0472", "datosmeteo/NH0472.csv")
+visualtm(datos)
+```
+
+<figure>
+<img src="figures/grafico_visualtm.png"
+alt="Gráfico de temperatura mensual" />
+<figcaption aria-hidden="true">Gráfico de temperatura
+mensual</figcaption>
+</figure>
+
+Si deseas consultar el uso de otras funciones que contiene **meteoLite**
+visita nuestra página web:
+[meteoLite](https://gaspialfonso.github.io/meteoLite/)
 
 ### Desarrollado por:
 
