@@ -3,4 +3,4 @@ template:
   bootstrap: 5
 
 assets:
-  - man/figures
+  - inst/figures
