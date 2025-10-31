@@ -60,13 +60,21 @@
 <code class="sourceCode R"><span><span class="co"># install.packages("pak")</span></span>
 <span><span class="fu">pak</span><span class="fu">::</span><span class="fu"><a href="https://pak.r-lib.org/reference/pak.html" class="external-link">pak</a></span><span class="op">(</span><span class="st">"GaspiAlfonso/meteoLite"</span><span class="op">)</span></span></code></pre></div>
 <div class="section level3">
+<h3 id="qué-hacer-primero">¿Qué hacer primero?<a class="anchor" aria-label="anchor" href="#qu%C3%A9-hacer-primero"></a>
+</h3>
+<p>Primero que nada deberá cargarse el paquete meteoLite de la siguiente forma:</p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/GaspiAlfonso/meteoLite" class="external-link">meteoLite</a></span><span class="op">)</span></span></code></pre></div>
+<p>Luego, deberás:</p>
+</div>
+<div class="section level3">
 <h3 id="descarga-de-datos">Descarga de Datos:<a class="anchor" aria-label="anchor" href="#descarga-de-datos"></a>
 </h3>
 <p>Para poder descargar datasets sobre las estaciones meteorológicas se diseño una función.</p>
 <p><strong>‘descarga_data’</strong>: toma como parámetro la estación que se desee descargar, y la ruta donde se guardará la misma.</p>
 </div>
 <div class="section level3">
-<h3 id="funciones">Funciones:<a class="anchor" aria-label="anchor" href="#funciones"></a>
+<h3 id="funciones-meteolite">Funciones meteoLite:<a class="anchor" aria-label="anchor" href="#funciones-meteolite"></a>
 </h3>
 <ol style="list-style-type: decimal">
 <li><p><strong>visualtm</strong>: Esta función recibe un data frame con una estación meteorológica que luego se encargará de gráficar la temperatura mensual de la misma.</p></li>
@@ -75,17 +83,10 @@
 </div>
 </div>
 <div class="section level2">
-<h2 id="ejemplo">Ejemplo<a class="anchor" aria-label="anchor" href="#ejemplo"></a>
-</h2>
-<p>Este es un ejemplo básico que muestra cómo instalar la librería del paquete:</p>
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/GaspiAlfonso/meteoLite" class="external-link">meteoLite</a></span><span class="op">)</span></span></code></pre></div>
-</div>
-<div class="section level2">
 <h2 id="uso-de-funciones">Uso de funciones:<a class="anchor" aria-label="anchor" href="#uso-de-funciones"></a>
 </h2>
 <div class="section level4">
-<h4 id="a-continuación-se-mostrará-un-ejemplo-de-cómo-hacer-uso-de-la-función-visualtm-">A continuación se mostrará un ejemplo de cómo hacer uso de la función <code>visualtm</code> :<a class="anchor" aria-label="anchor" href="#a-continuaci%C3%B3n-se-mostrar%C3%A1-un-ejemplo-de-c%C3%B3mo-hacer-uso-de-la-funci%C3%B3n-visualtm-"></a>
+<h4 id="a-continuación-se-puede-ver-un-ejemplo-de-cómo-hacer-uso-de-la-función-visualtm-">A continuación se puede ver un ejemplo de cómo hacer uso de la función <code>visualtm</code> :<a class="anchor" aria-label="anchor" href="#a-continuaci%C3%B3n-se-puede-ver-un-ejemplo-de-c%C3%B3mo-hacer-uso-de-la-funci%C3%B3n-visualtm-"></a>
 </h4>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">datos</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/descarga_data.html">descarga_data</a></span><span class="op">(</span><span class="st">"NH0472"</span>, <span class="st">"datosmeteo/NH0472.csv"</span><span class="op">)</span></span>
@@ -109,13 +110,9 @@ Gráfico de temperatura mensual
 <li><p><strong>Fork y cloná el repositorio</strong>: Haz un <em>fork</em> de este repositorio en tu cuenta de GitHub y cloná el repositorio en tu computadora local.</p></li>
 <li><p><strong>Realizá la contribución y hace un pull request</strong>: Realizá los cambios que consideres necesarios en tu copia de ese repositorio. Posteriormente, abrí un <em>pull request</em> a la rama principal del proyecto con una descripción comprensible del propósito de la contribución que realizaste.</p></li>
 </ol>
-<p>Si tenés dudas o requerías de ayuda sobre constribuciones, contactános:</p>
+<p>Si tenés dudas o requerías de ayuda sobre constribuciones, aquí te brindamos los contactos:</p>
 <p>- <strong>Alfonso Gaspar</strong>: <a href="mailto:galfonso1@mail.austral.edu.ar" class="email">galfonso1@mail.austral.edu.ar</a></p>
 <p>- <strong>Ingmar Bakker</strong>: <a href="mailto:ingmarbakker@mail.austral.edu.ar" class="email">ingmarbakker@mail.austral.edu.ar</a></p>
-<div class="section level4">
-<h4 id="código-de-constribución">Código de constribución:<a class="anchor" aria-label="anchor" href="#c%C3%B3digo-de-constribuci%C3%B3n"></a>
-</h4>
-</div>
 </div>
 </div>
 </div>
