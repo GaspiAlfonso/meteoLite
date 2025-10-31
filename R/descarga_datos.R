@@ -19,7 +19,7 @@ descarga_data <- function(id_estacion, ruta) {
   if (!file.exists(ruta)) {
     cli::cli_inform(c("i" = "El archivo no existe en la ruta especificada."))
     cli::cli_inform(c("i" = "Descargando datos desde GitHub..."))
-    download.file(url, ruta, mode = "wb")
+    utils::download.file(url, ruta, mode = "wb")
     cli::cli_inform(c("v" = "Archivo descargado correctamente."))
   } else {
     cli::cli_inform(c("v" = "El archivo ya existe. No se descarga de nuevo."))

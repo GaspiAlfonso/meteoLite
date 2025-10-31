@@ -30,7 +30,7 @@ visualtm <- function(datos, colores = NULL, titulo = "Temperatura") {
   # Colores: si no se pasan suficientes, elegir aleatoriamente
   estaciones <- unique(resumen_mensual$id)
   if(is.null(colores) || length(colores) < length(estaciones)) {
-    colores <- sample(colors(), length(estaciones))
+    colores <- sample(grDevices::colors(), length(estaciones))
   }
 
   # Crear gráfico

@@ -22,8 +22,8 @@
 #' @export
 tabla_resume_temperatura <- function(datos) {
   datos |>
-    group_by(id) |>
-    summarise(
+    dplyr::group_by(id) |>
+    dplyr::summarise(
       promedio = mean(temperatura_abrigo_150cm, na.rm = TRUE),
       mediana = median(temperatura_abrigo_150cm, na.rm = TRUE),
       minimo = min(temperatura_abrigo_150cm, na.rm = TRUE),
