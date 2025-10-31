@@ -66,10 +66,13 @@ visualtm(datos)
 ```
 
 <figure>
-<img src="inst/figures/grafico_visualtm.png"
-alt="Gráfico de temperatura mensual" />
-<figcaption aria-hidden="true">Gráfico de temperatura
-mensual</figcaption>
+
+<img src="inst/figures/grafico_visualtm.png" alt="Gráfico de temperatura mensual" />
+<figcaption aria-hidden="true">
+
+Gráfico de temperatura mensual
+</figcaption>
+
 </figure>
 
 Si deseas consultar el uso de otras funciones que contiene **meteoLite**
