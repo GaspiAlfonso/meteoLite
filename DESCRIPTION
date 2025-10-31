@@ -17,3 +17,12 @@ BugReports: https://github.com/GaspiAlfonso/meteoLite/issues
 Depends: 
     R (>= 3.5)
 LazyData: true
+Suggests: 
+    cli,
+    testthat (>= 3.0.0)
+Imports: 
+    dplyr,
+    ggplot2,
+    lubridate,
+    readr
+Config/testthat/edition: 3
