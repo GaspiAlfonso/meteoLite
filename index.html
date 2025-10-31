@@ -51,8 +51,7 @@
 <!-- badges: start -->
 
 <p>Paquete de prueba para lectura y análisis de datos meteorológicos.</p>
-<p>⚠️ Este paquete está en desarrollo y no está pensado aún para uso productivo.</p>
-<p>Proximamente verás nuevas actualizaciones …</p>
+<p>Proximamente estará disponible para su uso …</p>
 <div class="section level2">
 <h2 id="instalación">Instalación<a class="anchor" aria-label="anchor" href="#instalaci%C3%B3n"></a>
 </h2>
@@ -66,6 +65,14 @@
 <p>Para poder descargar datasets sobre las estaciones meteorológicas se diseño una función.</p>
 <p><strong>‘descarga_data’</strong>: toma como parámetro la estación que se desee descargar, y la ruta donde se guardará la misma.</p>
 </div>
+<div class="section level3">
+<h3 id="funciones">Funciones:<a class="anchor" aria-label="anchor" href="#funciones"></a>
+</h3>
+<ol style="list-style-type: decimal">
+<li><p><strong>visualtm</strong>: Esta función recibe un data frame con una estación meteorológica que luego se encargará de gráficar la temperatura mensual de la misma.</p></li>
+<li><p><strong>tabla_resume_temperatura</strong>: función que recibe un data frame con la estación meteorológica y su temperatura_abrigo, a partir de ello, generará una tabla con resumen estadístico para una o más estaciones meteorológicas.</p></li>
+</ol>
+</div>
 </div>
 <div class="section level2">
 <h2 id="ejemplo">Ejemplo<a class="anchor" aria-label="anchor" href="#ejemplo"></a>
@@ -73,6 +80,20 @@
 <p>Este es un ejemplo básico que muestra cómo instalar la librería del paquete:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/GaspiAlfonso/meteoLite" class="external-link">meteoLite</a></span><span class="op">)</span></span></code></pre></div>
+</div>
+<div class="section level2">
+<h2 id="uso-de-funciones">Uso de funciones:<a class="anchor" aria-label="anchor" href="#uso-de-funciones"></a>
+</h2>
+<div class="section level4">
+<h4 id="a-continuación-se-mostrará-un-ejemplo-de-cómo-hacer-uso-de-la-función-visualtm-">A continuación se mostrará un ejemplo de cómo hacer uso de la función <code>visualtm</code> :<a class="anchor" aria-label="anchor" href="#a-continuaci%C3%B3n-se-mostrar%C3%A1-un-ejemplo-de-c%C3%B3mo-hacer-uso-de-la-funci%C3%B3n-visualtm-"></a>
+</h4>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">datos</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/descarga_data.html">descarga_data</a></span><span class="op">(</span><span class="st">"NH0472"</span>, <span class="st">"datosmeteo/NH0472.csv"</span><span class="op">)</span></span>
+<span><span class="fu"><a href="reference/visualtm.html">visualtm</a></span><span class="op">(</span><span class="va">datos</span><span class="op">)</span></span></code></pre></div>
+<figure><img src="figures/grafico_visualtm.png" alt="Gráfico de temperatura mensual"><figcaption aria-hidden="true">
+Gráfico de temperatura mensual
+</figcaption></figure><p>Si deseas consultar el uso de otras funciones que contiene <strong>meteoLite</strong> visita nuestra página web: <a href="https://gaspialfonso.github.io/meteoLite/">meteoLite</a></p>
+</div>
 <div class="section level3">
 <h3 id="desarrollado-por">Desarrollado por:<a class="anchor" aria-label="anchor" href="#desarrollado-por"></a>
 </h3>
