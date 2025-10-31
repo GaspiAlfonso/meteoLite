@@ -48,7 +48,8 @@ library(meteoLite)
 - [Gaspar Alfonso](https://github.com/GaspiAlfonso) Data Scientist
   Student at Universidad Austral (Rosario) & IA Student.
 
-- []() Estudiante de Ciencia de Datos en la Universidad Austral
+- [Ingmar Bakker](https://github.com/Ingbakk16) Estudiante de Ciencias
+  de Datos en la Universidad Austral
 
 ### Constribución al paquete:
 
@@ -64,7 +65,8 @@ library(meteoLite)
 
 Si tenés dudas o requerías de ayuda sobre constribuciones, contactános:
 
-\- **Alfonso Gaspar**: <galfonso1@mail.austral.edu.ar> - **Ingmar
-Bakker**: <ingmarbakker@mail.austral.edu.ar>
+\- **Alfonso Gaspar**: <galfonso1@mail.austral.edu.ar>
+
+\- **Ingmar Bakker**: <ingmarbakker@mail.austral.edu.ar>
 
 #### Código de constribución:
