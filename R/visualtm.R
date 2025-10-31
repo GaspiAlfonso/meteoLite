@@ -8,7 +8,7 @@
 #'
 #' @examples
 #' \dontrun{
-#' datos <- lectura_datos_estaciones("NH0472", "datos/NH0472.csv")
+#' datos <- descarga_data("NH0472", "datosmeteo/NH0472.csv")
 #' visualtm(datos)
 #' }
 #' @export
