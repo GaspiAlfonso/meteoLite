@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# meteoLite <img src="inst/figures/meteoLite-original.png" align="right" width="130"/>
+# meteoLite <img src="figures/meteoLite-original.png" align="right" width="130"/>
 
 <!-- badges: start -->
 

@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# meteoLite <img src="inst/figures/meteoLite-original.png" align="right" width="130"/>
+# meteoLite <img src="figures/meteoLite-original.png" align="right" width="130"/>
 <!-- badges: start -->
 
 [![Lifecycle:
