@@ -41,7 +41,7 @@ visualtm <- function(datos, colores = NULL, titulo = "Temperatura") {
     ggplot2::labs(title = titulo,
                   x = "Mes",
                   y = "Temperatura de abrigo 150cm",
-                  color = "Estación") +
+                  color = "Estaci\u00F3n") +
     ggplot2::theme_minimal() +
     ggplot2::theme(text = ggplot2::element_text(size = 12))
 
