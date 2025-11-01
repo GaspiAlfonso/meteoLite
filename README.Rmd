@@ -34,7 +34,7 @@ You can install the development version of meteoLite from [GitHub](https://githu
 # install.packages("pak")
 pak::pak("GaspiAlfonso/meteoLite")
 ```
-### ¿Qué hacer primero?
+### ¿Qué hacer primero que nada?
 Primero que nada deberá cargarse el paquete meteoLite de la siguiente forma:
 ```r
 library(meteoLite)

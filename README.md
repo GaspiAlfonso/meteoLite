@@ -26,7 +26,7 @@ You can install the development version of meteoLite from
 pak::pak("GaspiAlfonso/meteoLite")
 ```
 
-### ¿Qué hacer primero?
+### ¿Qué hacer primero que nada?
 
 Primero que nada deberá cargarse el paquete meteoLite de la siguiente
 forma:
