@@ -96,7 +96,7 @@ visita nuestra página web:
     proyecto con una descripción comprensible del propósito de la
     contribución que realizaste.
 
-Si tenés dudas o requerías de ayuda sobre constribuciones, aquí te
+Si tenés dudas o requieres de ayuda sobre constribuciones, aquí te
 brindamos los contactos:
 
 \- **Alfonso Gaspar**: <galfonso1@mail.austral.edu.ar>

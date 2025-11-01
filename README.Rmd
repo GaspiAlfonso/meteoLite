@@ -79,9 +79,10 @@ Si deseas consultar el uso de otras funciones que contiene **meteoLite** visita 
 2. **Realizá la contribución y hace un pull request**: Realizá los cambios  que consideres necesarios en tu copia de ese repositorio. 
 Posteriormente, abrí un *pull request* a la rama principal del proyecto con una descripción comprensible del propósito de la contribución que realizaste. 
 
-Si tenés dudas o requerías de ayuda sobre constribuciones, aquí te brindamos los contactos:
+Si tenés dudas o requieres de ayuda sobre constribuciones, aquí te brindamos los contactos:
 
 \- **Alfonso Gaspar**: [galfonso1@mail.austral.edu.ar](mailto:galfonso1@mail.austral.edu.ar)
 
 \- **Ingmar Bakker**: [ingmarbakker@mail.austral.edu.ar](mailto:ingmarbakker@mail.austral.edu.ar)
+
 
