@@ -24,8 +24,9 @@ para una o más estaciones meteorológicas.
 }
 \examples{
 \dontrun{
-datos<- lectura_datos_estaciones("NH0472", "datos/NH0472.csv")
-tabla_resumen_temperatura(datos)
+datos<- descarga_data("NH0472", "datosmeteo/NH0472.csv")
+tabla_resume_temperatura(datos)
 }
+
 
 }

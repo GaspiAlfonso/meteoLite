@@ -11,7 +11,6 @@
 #' datos <- descarga_data("NH0472", "datosmeteo/NH0472.csv")
 #' visualtm(datos)
 #' }
-#' ![Gráfico de temperatura mensual](inst/figures/grafico_visualtm.png)
 #' @export
 visualtm <- function(datos, colores = NULL, titulo = "Temperatura") {
 
