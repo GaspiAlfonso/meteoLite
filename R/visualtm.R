@@ -47,3 +47,5 @@ visualtm <- function(datos, colores = NULL, titulo = "Temperatura") {
 
   return(g)
 }
+
+
