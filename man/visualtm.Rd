@@ -24,5 +24,4 @@ Gráfico de temperatura mensual por estación
 datos <- descarga_data("NH0472", "datosmeteo/NH0472.csv")
 visualtm(datos)
 }
-![Gráfico de temperatura mensual](inst/figures/grafico_visualtm.png)
 }
