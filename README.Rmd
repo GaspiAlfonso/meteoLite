@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# meteoLite <img src="figures/meteoLite-original.png" align="right" width="130"/>
+# meteoLite <img src="man/figures/meteoLite-original.png" align="right" width="130"/>
 <!-- badges: start -->
 
 [![Lifecycle:
@@ -62,6 +62,7 @@ datos <- descarga_data("NH0472", "datosmeteo/NH0472.csv")
 visualtm(datos)
 ```
 ![Gráfico de temperatura mensual](man/figures/grafico_visualtm.png)
+
 Si deseas consultar el uso de otras funciones que contiene **meteoLite** visita nuestra página web: [meteoLite](https://gaspialfonso.github.io/meteoLite/)
 
 ### Desarrollado por:
@@ -83,5 +84,4 @@ Si tenés dudas o requerías de ayuda sobre constribuciones, aquí te brindamos 
 \- **Alfonso Gaspar**: [galfonso1@mail.austral.edu.ar](mailto:galfonso1@mail.austral.edu.ar)
 
 \- **Ingmar Bakker**: [ingmarbakker@mail.austral.edu.ar](mailto:ingmarbakker@mail.austral.edu.ar)
-
 

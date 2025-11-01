@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# meteoLite <img src="figures/meteoLite-original.png" align="right" width="130"/>
+# meteoLite <img src="man/figures/meteoLite-original.png" align="right" width="130"/>
 
 <!-- badges: start -->
 
@@ -65,8 +65,14 @@ datos <- descarga_data("NH0472", "datosmeteo/NH0472.csv")
 visualtm(datos)
 ```
 
-![Gráfico de temperatura mensual](man/figures/grafico_visualtm.png) Si
-deseas consultar el uso de otras funciones que contiene **meteoLite**
+<figure>
+<img src="man/figures/grafico_visualtm.png"
+alt="Gráfico de temperatura mensual" />
+<figcaption aria-hidden="true">Gráfico de temperatura
+mensual</figcaption>
+</figure>
+
+Si deseas consultar el uso de otras funciones que contiene **meteoLite**
 visita nuestra página web:
 [meteoLite](https://gaspialfonso.github.io/meteoLite/)
 
