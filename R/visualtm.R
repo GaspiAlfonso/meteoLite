@@ -1,5 +1,10 @@
 #' Gráfico de temperatura mensual por estación
 #'
+#' Esta función genera un gráfico de líneas de la temperatura promedio mensual
+#' a 150 cm de abrigo. Si se desea graficar más de una estación, se pueden
+#' combinar los datasets usando `dplyr::bind_rows()` antes de llamar a esta función.
+#'
+#'
 #' @param datos Un data frame con las columnas 'id', 'fecha', y 'temperatura_abrigo_150cm'.
 #' @param colores Vector opcional de colores personalizados para las estaciones.
 #' @param titulo Título del gráfico. Por defecto, "Temperatura".
