@@ -1,0 +1,92 @@
+---
+title: "meteoLite"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{introduccion}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(meteoLite)
+```
+
+# 🌦 Introducción
+
+El paquete **meteoLite** permite descargar, procesar y visualizar datos meteorológicos de distintas estaciones de forma sencilla y reproducible.
+
+Incluye tres funciones principales:
+
+- `descarga_data()` - descarga y lee los datos desde un repositorio público.
+- `tabla_resume_temperatura()` - calcula medidas resumen de temperatura.
+- `visualtm()` - genera gráfico de temperatura mensual por estación.
+
+## -- 📥 Descargar datos
+
+Podemos descargar datos meteorológicos reales desde Github con la función `descarga_data()`.
+
+
+```{r, eval = FALSE}
+# Descargamos los datos de la estación NH0472
+datos <- descarga_data("NH0472", "datosmeteo/NH0472.csv")
+```
+
+## -- 📊 Resumir la temperatura
+
+Una vez cargados los datos, podemos obtener un resumen estadístico (por estación) utilizando `tabla_resume_temperatura()`.
+
+```{r, eval = FALSE}
+# Ver un resumen de la estación "NH0472"
+resumen <- tabla_resume_temperatura(datos)
+resumen
+```
+
+Esto devuelve una tabla con la **temperatura promedio**, **mediana**, **mínima**, y **máxima** a **150cm de altura**.
+
+## -- 📈 Visualizar los resultados
+
+Para observar la evolución de la temperatura a lo largo del año, usamos `visualtm()`.
+
+```{r, eval = FALSE}
+# Ver un resumen de la estación "NH0472"
+visualtm(datos, titulo = "Temperatura mensual promedio - NH0472")
+```
+
+Este gráfico muestra la temperatura promedio mensual para la estación seleccionada, con un color distinto por estación (si hay más de una).
+
+# **Ejemplo Combinado**:
+
+### Descargar datos
+
+```{r}
+datos <- descarga_data("NH0098", "../datosmeteo/NH0098.csv")
+```
+
+### Calcular resumen
+
+```{r}
+tabla_resume_temperatura(datos)
+```
+
+### Graficar
+
+```{r}
+visualtm(datos, titulo = "Evolución mensual de temperatura - NH0098")
+```
+
+# Conclusión
+
+**meteoLite** simplifica el manejo de datos meteorológicos al proporcionar herramientas integradas para:
+**1.** Descargar datos automáticamente
+**2.** Resumir información clave.
+**3.** Visualizar tendencias mensuales de temperatura.
+
+Este flujo de trabajo permite explorar, comparar y analizar datos de distintas estaciones de forma rápida y reproducible. 
+

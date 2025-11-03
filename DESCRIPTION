@@ -18,6 +18,8 @@ Depends:
 LazyData: true
 Suggests: 
     cli,
+    knitr,
+    rmarkdown,
     testthat (>= 3.0.0)
 Imports: 
     dplyr,
@@ -25,3 +27,4 @@ Imports:
     lubridate,
     readr
 Config/testthat/edition: 3
+VignetteBuilder: knitr
