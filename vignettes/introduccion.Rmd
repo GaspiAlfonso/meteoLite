@@ -63,30 +63,41 @@ Este gráfico muestra la temperatura promedio mensual para la estación seleccio
 
 # **Ejemplo Combinado**:
 
-### Descargar datos
+```{r, include = FALSE}
+# Cargar CSV para knitr y R CMD check
+archivo <- system.file("extdata", "NH0098.csv", package = "meteoLite")
 
-```{r}
-datos <- descarga_data("NH0098", "../datosmeteo/NH0098.csv")
+# Si el archivo no existe (aún no instalaste el paquete), usar ruta local
+if (file.exists(archivo)) {
+  datos <- read.csv(archivo)
+} else {
+  datos <- read.csv("../datosmeteo/NH0098.csv")  # ruta local durante desarrollo
+}
 ```
+
 
 ### Calcular resumen
 
 ```{r}
-tabla_resume_temperatura(datos)
+resumen <- tabla_resume_temperatura(datos)
+resumen
 ```
 
 ### Graficar
 
-```{r}
+```{r = echo}
 visualtm(datos, titulo = "Evolución mensual de temperatura - NH0098")
 ```
 
 # Conclusión
 
 **meteoLite** simplifica el manejo de datos meteorológicos al proporcionar herramientas integradas para:
-**1.** Descargar datos automáticamente
-**2.** Resumir información clave.
-**3.** Visualizar tendencias mensuales de temperatura.
+
+**1.** Descargar datos automáticamente. 
+
+**2.** Resumir información clave. 
+
+**3.** Visualizar tendencias mensuales de temperatura. 
 
 Este flujo de trabajo permite explorar, comparar y analizar datos de distintas estaciones de forma rápida y reproducible. 
 
