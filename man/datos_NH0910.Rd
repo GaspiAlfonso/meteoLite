@@ -3,7 +3,7 @@
 \docType{data}
 \name{datos_NH0910}
 \alias{datos_NH0910}
-\title{Datos meteorológicos de la estación NH0437}
+\title{Datos meteorológicos de la estación NH0910}
 \format{
 Un data frame con las siguientes columnas:
 \describe{
@@ -52,7 +52,7 @@ Un data frame con las siguientes columnas:
 datos_NH0910
 }
 \description{
-Este dataset contiene mediciones meteorológicas de la estación NH0437,
+Este dataset contiene mediciones meteorológicas de la estación NH0910,
 incluyendo temperatura, humedad, presión, viento, radiación y otras variables.
 }
 \keyword{datasets}

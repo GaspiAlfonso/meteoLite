@@ -45,9 +45,9 @@
 #' @source \url{https://github.com/rse-r/intro-programacion}
 "datos_NH0437"
 
-#' Datos meteorológicos de la estación NH0437
+#' Datos meteorológicos de la estación NH0472
 #'
-#' Este dataset contiene mediciones meteorológicas de la estación NH0437,
+#' Este dataset contiene mediciones meteorológicas de la estación NH0472,
 #' incluyendo temperatura, humedad, presión, viento, radiación y otras variables.
 #'
 #' @format Un data frame con las siguientes columnas:
@@ -90,11 +90,11 @@
 #'   \item{estacion}{Código de la estación (repetido).}
 #' }
 #' @source \url{https://github.com/rse-r/intro-programacion}
-"datos_NH0098"
+"datos_NH0472"
 
-#' Datos meteorológicos de la estación NH0437
+#' Datos meteorológicos de la estación NH0046
 #'
-#' Este dataset contiene mediciones meteorológicas de la estación NH0437,
+#' Este dataset contiene mediciones meteorológicas de la estación NH0046,
 #' incluyendo temperatura, humedad, presión, viento, radiación y otras variables.
 #'
 #' @format Un data frame con las siguientes columnas:
@@ -139,9 +139,9 @@
 #' @source \url{https://github.com/rse-r/intro-programacion}
 "datos_NH0046"
 
-#' Datos meteorológicos de la estación NH0437
+#' Datos meteorológicos de la estación NH0910
 #'
-#' Este dataset contiene mediciones meteorológicas de la estación NH0437,
+#' Este dataset contiene mediciones meteorológicas de la estación NH0910,
 #' incluyendo temperatura, humedad, presión, viento, radiación y otras variables.
 #'
 #' @format Un data frame con las siguientes columnas:
@@ -186,9 +186,9 @@
 #' @source \url{https://github.com/rse-r/intro-programacion}
 "datos_NH0910"
 
-#' Datos meteorológicos de la estación NH0437
+#' Datos meteorológicos de la estación NH0098
 #'
-#' Este dataset contiene mediciones meteorológicas de la estación NH0437,
+#' Este dataset contiene mediciones meteorológicas de la estación NH0098,
 #' incluyendo temperatura, humedad, presión, viento, radiación y otras variables.
 #'
 #' @format Un data frame con las siguientes columnas:
@@ -231,4 +231,4 @@
 #'   \item{estacion}{Código de la estación (repetido).}
 #' }
 #' @source \url{https://github.com/rse-r/intro-programacion}
-"datos_NH0472"
+"datos_NH0098"
