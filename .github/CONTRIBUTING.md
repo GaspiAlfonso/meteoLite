@@ -37,6 +37,6 @@ Esto nos ayudará a resolverlo más rápido. ⚡
 ## Código de conducta
 
 Por favor, comportate de manera respetuosa y colaborativa.
-Para más información: [Contributor Code of Conduct](CODE_OF_CONDUCT.md)
+Para más información: [CODIGO DE CONDUCTA](CODE_OF_CONDUCT.md)
 
 Gracias por tu tiempo y tu colaboración. Cada contribución ayuda a que meteoLite siga creciendo y mejorando. 💪
