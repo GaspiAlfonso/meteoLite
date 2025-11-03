@@ -124,23 +124,11 @@ una).</p>
 <strong>Ejemplo Combinado</strong>:<a class="anchor" aria-label="anchor" href="#ejemplo-combinado"></a>
 </h2>
 <div class="section level4">
-<h4 id="descargar-datos-1">Descargar datos<a class="anchor" aria-label="anchor" href="#descargar-datos-1"></a>
-</h4>
-<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">datos</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/descarga_data.html">descarga_data</a></span><span class="op">(</span><span class="st">"NH0098"</span>, <span class="st">"../datosmeteo/NH0098.csv"</span><span class="op">)</span></span>
-<span><span class="co">#&gt; <span style="color: #00BB00;">✔</span> El archivo ya existe. No se descarga de nuevo.</span></span>
-<span><span class="co">#&gt; <span style="color: #00BBBB;">ℹ</span> Leyendo datos...</span></span>
-<span><span class="co">#&gt; Warning: One or more parsing issues, call `problems()` on your data frame for details,</span></span>
-<span><span class="co">#&gt; e.g.:</span></span>
-<span><span class="co">#&gt;   dat &lt;- vroom(...)</span></span>
-<span><span class="co">#&gt;   problems(dat)</span></span>
-<span><span class="co">#&gt; <span style="color: #00BB00;">✔</span> Datos cargados en R.</span></span></code></pre></div>
-</div>
-<div class="section level4">
 <h4 id="calcular-resumen">Calcular resumen<a class="anchor" aria-label="anchor" href="#calcular-resumen"></a>
 </h4>
-<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="../reference/tabla_resume_temperatura.html">tabla_resume_temperatura</a></span><span class="op">(</span><span class="va">datos</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">resumen</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/tabla_resume_temperatura.html">tabla_resume_temperatura</a></span><span class="op">(</span><span class="va">datos</span><span class="op">)</span></span>
+<span><span class="va">resumen</span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 1 × 5</span></span></span>
 <span><span class="co">#&gt;   id     promedio mediana minimo maximo</span></span>
 <span><span class="co">#&gt;   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span></span>
@@ -149,19 +137,20 @@ una).</p>
 <div class="section level4">
 <h4 id="graficar">Graficar<a class="anchor" aria-label="anchor" href="#graficar"></a>
 </h4>
-<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/visualtm.html">visualtm</a></span><span class="op">(</span><span class="va">datos</span>, titulo <span class="op">=</span> <span class="st">"Evolución mensual de temperatura - NH0098"</span><span class="op">)</span></span></code></pre></div>
-<p><img src="introduccion_files/figure-html/unnamed-chunk-7-1.png" width="700"></p>
+<p><img src="introduccion_files/figure-html/=%20echo-1.png" width="700"></p>
 </div>
 </div>
 <div class="section level2">
 <h2 id="conclusión">Conclusión<a class="anchor" aria-label="anchor" href="#conclusi%C3%B3n"></a>
 </h2>
 <p><strong>meteoLite</strong> simplifica el manejo de datos
-meteorológicos al proporcionar herramientas integradas para:
-<strong>1.</strong> Descargar datos automáticamente <strong>2.</strong>
-Resumir información clave. <strong>3.</strong> Visualizar tendencias
-mensuales de temperatura.</p>
+meteorológicos al proporcionar herramientas integradas para:</p>
+<p><strong>1.</strong> Descargar datos automáticamente.</p>
+<p><strong>2.</strong> Resumir información clave.</p>
+<p><strong>3.</strong> Visualizar tendencias mensuales de
+temperatura.</p>
 <p>Este flujo de trabajo permite explorar, comparar y analizar datos de
 distintas estaciones de forma rápida y reproducible.</p>
 </div>
