@@ -17,7 +17,9 @@ visualtm(datos, colores = NULL, titulo = "Temperatura")
 Un objeto ggplot2 con el gráfico de temperaturas mensuales.
 }
 \description{
-Gráfico de temperatura mensual por estación
+Esta función genera un gráfico de líneas de la temperatura promedio mensual
+a 150 cm de abrigo. Si se desea graficar más de una estación, se pueden
+combinar los datasets usando \code{dplyr::bind_rows()} antes de llamar a esta función.
 }
 \examples{
 \dontrun{
