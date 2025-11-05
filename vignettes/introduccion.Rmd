@@ -27,6 +27,7 @@ Incluye tres funciones principales:
 - `descarga_data()` - descarga y lee los datos desde un repositorio público.
 - `tabla_resume_temperatura()` - calcula medidas resumen de temperatura.
 - `visualtm()` - genera gráfico de temperatura mensual por estación.
+- `resumen_lluvias`()` - calcula estadisticas basicas de precipitaciones.
 
 ## -- 📥 Descargar datos
 
@@ -49,6 +50,18 @@ resumen
 ```
 
 Esto devuelve una tabla con la **temperatura promedio**, **mediana**, **mínima**, y **máxima** a **150cm de altura**.
+
+## -- 📊 Resumir las precipitaciones
+
+Una vez cargados los datos, podemos obtener un resumen estadístico (por mes) utilizando `resumen_lluvias`()`.
+
+```{r,  eval = FALSE}
+resumen_lluvias <- resumen_lluvias(datos)
+resumen_lluvias
+```
+
+
+Esto devuelve una tabla con la **lluvia_total**, **lluvia_promedio** y **lluvia_ocurrencia** por **mes**.
 
 ## -- 📈 Visualizar los resultados
 

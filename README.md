@@ -55,10 +55,10 @@ descargar, y la ruta donde se guardará la misma.
     la estación meteorológica y su temperatura_abrigo, a partir de ello,
     generará una tabla con resumen estadístico para una o más estaciones
     meteorológicas.
-    
-3. **resumen_lluvias**: recibe un data frame de una estacion metereologica
-   con columas de fecha y precipitacion, en base a esto genera una tabala con
-   un resumen agrupado por mes.
+
+3.  **resumen_lluvias**: recibe un data frame de una estacion
+    metereologica con columas de fecha y precipitacion, en base a esto
+    genera una tabala con un resumen agrupado por mes.
 
 ## Uso de funciones:
 
