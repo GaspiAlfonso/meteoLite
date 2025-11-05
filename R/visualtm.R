@@ -29,7 +29,7 @@ visualtm <- function(datos, colores = NULL, titulo = "Temperatura") {
   # Calcular promedio mensual por estación
   resumen_mensual <- datos |>
     dplyr::group_by(id, mes) |>
-    dplyr::summarise(promedio = mean(temperatura_abrigo_150cm, na.rm = TRUE), .groups = "drop")
+    dplyr::summarise(promedio = base::mean(temperatura_abrigo_150cm, na.rm = TRUE), .groups = "drop")
 
   # Colores: si no se pasan suficientes, elegir aleatoriamente
   estaciones <- unique(resumen_mensual$id)
