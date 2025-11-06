@@ -83,6 +83,9 @@ temperatura.</li>
 <li>
 <code><a href="../reference/visualtm.html">visualtm()</a></code> - genera gráfico de temperatura mensual por
 estación.</li>
+<li>
+<code>resumen_lluvias</code>()` - calcula estadisticas basicas de
+precipitaciones.</li>
 </ul>
 <div class="section level3">
 <h3 id="descargar-datos">– 📥 Descargar datos<a class="anchor" aria-label="anchor" href="#descargar-datos"></a>
@@ -107,11 +110,23 @@ función <code><a href="../reference/descarga_data.html">descarga_data()</a></co
 <strong>máxima</strong> a <strong>150cm de altura</strong>.</p>
 </div>
 <div class="section level3">
+<h3 id="resumir-las-precipitaciones">– 📊 Resumir las precipitaciones<a class="anchor" aria-label="anchor" href="#resumir-las-precipitaciones"></a>
+</h3>
+<p>Una vez cargados los datos, podemos obtener un resumen estadístico
+(por mes) utilizando <code>resumen_lluvias</code>()`.</p>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">resumen_lluvias</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/resumen_lluvias.html">resumen_lluvias</a></span><span class="op">(</span><span class="va">datos</span><span class="op">)</span></span>
+<span><span class="va">resumen_lluvias</span></span></code></pre></div>
+<p>Esto devuelve una tabla con la <strong>lluvia_total</strong>,
+<strong>lluvia_promedio</strong> y <strong>lluvia_ocurrencia</strong>
+por <strong>mes</strong>.</p>
+</div>
+<div class="section level3">
 <h3 id="visualizar-los-resultados">– 📈 Visualizar los resultados<a class="anchor" aria-label="anchor" href="#visualizar-los-resultados"></a>
 </h3>
 <p>Para observar la evolución de la temperatura a lo largo del año,
 usamos <code><a href="../reference/visualtm.html">visualtm()</a></code>.</p>
-<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># Ver un resumen de la estación "NH0472"</span></span>
 <span><span class="fu"><a href="../reference/visualtm.html">visualtm</a></span><span class="op">(</span><span class="va">datos</span>, titulo <span class="op">=</span> <span class="st">"Temperatura mensual promedio - NH0472"</span><span class="op">)</span></span></code></pre></div>
 <p>Este gráfico muestra la temperatura promedio mensual para la estación
@@ -126,7 +141,7 @@ una).</p>
 <div class="section level4">
 <h4 id="calcular-resumen">Calcular resumen<a class="anchor" aria-label="anchor" href="#calcular-resumen"></a>
 </h4>
-<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">resumen</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/tabla_resume_temperatura.html">tabla_resume_temperatura</a></span><span class="op">(</span><span class="va">datos</span><span class="op">)</span></span>
 <span><span class="va">resumen</span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 1 × 5</span></span></span>
@@ -137,7 +152,7 @@ una).</p>
 <div class="section level4">
 <h4 id="graficar">Graficar<a class="anchor" aria-label="anchor" href="#graficar"></a>
 </h4>
-<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/visualtm.html">visualtm</a></span><span class="op">(</span><span class="va">datos</span>, titulo <span class="op">=</span> <span class="st">"Evolución mensual de temperatura - NH0098"</span><span class="op">)</span></span></code></pre></div>
 <p><img src="introduccion_files/figure-html/=%20echo-1.png" width="700"></p>
 </div>
@@ -161,7 +176,7 @@ distintas estaciones de forma rápida y reproducible.</p>
 
 
     <footer><div class="pkgdown-footer-left">
-  <p>Developed by Gaspar Alfonso.</p>
+  <p>Developed by Ingmar Bakker.</p>
 </div>
 
 <div class="pkgdown-footer-right">
