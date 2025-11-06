@@ -4,7 +4,7 @@
 #' a partir de su ID.
 #'
 #'
-#' @param id_estacion Código de las estaciones disponibles: "NH0472", "NH0098", "NH00910", "NH0437", "NH0046".
+#' @param id_estacion Código de la estaciónes disponibles: "NH0437,"NH0472", "NH0046", "NH0910", "NH0098".
 #' @param ruta Ruta donde se guardará el archivo descargado, por ejemplo "datos/NH0472.csv"
 #'
 #' @returns Un data frame con los datos de la estación
