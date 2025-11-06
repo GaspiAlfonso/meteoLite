@@ -32,6 +32,12 @@
     <div id="navbar" class="collapse navbar-collapse ms-3">
       <ul class="navbar-nav me-auto">
 <li class="nav-item"><a class="nav-link" href="reference/index.html">Reference</a></li>
+<li class="nav-item dropdown">
+  <button class="nav-link dropdown-toggle" type="button" id="dropdown-articles" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Articles</button>
+  <ul class="dropdown-menu" aria-labelledby="dropdown-articles">
+<li><a class="dropdown-item" href="articles/introduccion.html">meteoLite</a></li>
+  </ul>
+</li>
       </ul>
 <ul class="navbar-nav">
 <li class="nav-item"><form class="form-inline" role="search">
@@ -60,7 +66,7 @@
 <code class="sourceCode R"><span><span class="co"># install.packages("pak")</span></span>
 <span><span class="fu">pak</span><span class="fu">::</span><span class="fu"><a href="https://pak.r-lib.org/reference/pak.html" class="external-link">pak</a></span><span class="op">(</span><span class="st">"GaspiAlfonso/meteoLite"</span><span class="op">)</span></span></code></pre></div>
 <div class="section level3">
-<h3 id="qué-hacer-primero">¿Qué hacer primero?<a class="anchor" aria-label="anchor" href="#qu%C3%A9-hacer-primero"></a>
+<h3 id="qué-hacer-primero-que-nada">¿Qué hacer primero que nada?<a class="anchor" aria-label="anchor" href="#qu%C3%A9-hacer-primero-que-nada"></a>
 </h3>
 <p>Primero que nada deberá cargarse el paquete meteoLite de la siguiente forma:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
@@ -79,6 +85,7 @@
 <ol style="list-style-type: decimal">
 <li><p><strong>visualtm</strong>: Esta función recibe un data frame con una estación meteorológica que luego se encargará de gráficar la temperatura mensual de la misma.</p></li>
 <li><p><strong>tabla_resume_temperatura</strong>: función que recibe un data frame con la estación meteorológica y su temperatura_abrigo, a partir de ello, generará una tabla con resumen estadístico para una o más estaciones meteorológicas.</p></li>
+<li><p><strong>resumen_lluvias</strong>: recibe un data frame de una estacion metereologica con columas de fecha y precipitacion, en base a esto genera una tabala con un resumen agrupado por mes.</p></li>
 </ol>
 </div>
 </div>
@@ -135,6 +142,7 @@ Gráfico de temperatura mensual
 <div class="community">
 <h2 data-toc-skip>Community</h2>
 <ul class="list-unstyled">
+<li><a href="CONTRIBUTING.html">Contributing guide</a></li>
 <li><a href="CODE_OF_CONDUCT.html">Code of conduct</a></li>
 </ul>
 </div>
@@ -150,6 +158,7 @@ Gráfico de temperatura mensual
 <h2 data-toc-skip>Developers</h2>
 <ul class="list-unstyled">
 <li>Gaspar Alfonso <br><small class="roles"> Author, maintainer </small>   </li>
+<li>Ingmar Bakker <br><small class="roles"> Author </small>   </li>
 </ul>
 </div>
 
@@ -167,7 +176,7 @@ Gráfico de temperatura mensual
 
 
     <footer><div class="pkgdown-footer-left">
-  <p>Developed by Gaspar Alfonso.</p>
+  <p>Developed by Gaspar Alfonso, Ingmar Bakker.</p>
 </div>
 
 <div class="pkgdown-footer-right">
