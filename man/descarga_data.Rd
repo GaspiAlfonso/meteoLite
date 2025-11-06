@@ -7,7 +7,7 @@
 descarga_data(id_estacion, ruta)
 }
 \arguments{
-\item{id_estacion}{Código de las estaciones disponibles: "NH0472", "NH0098", "NH00910", "NH0437", "NH0046".}
+\item{id_estacion}{Código de la estaciónes disponibles: "NH0437,"NH0472", "NH0046", "NH0910", "NH0098".}
 
 \item{ruta}{Ruta donde se guardará el archivo descargado, por ejemplo "datos/NH0472.csv"}
 }
