@@ -25,10 +25,10 @@ tabla_resume_temperatura <- function(datos) {
   datos |>
     dplyr::group_by(id) |>
     dplyr::summarise(
-      promedio = mean(temperatura_abrigo_150cm, na.rm = TRUE),
-      mediana = median(temperatura_abrigo_150cm, na.rm = TRUE),
-      minimo = min(temperatura_abrigo_150cm, na.rm = TRUE),
-      maximo = max(temperatura_abrigo_150cm, na.rm = TRUE),
+      promedio = base::mean(temperatura_abrigo_150cm, na.rm = TRUE),
+      mediana = stats::median(temperatura_abrigo_150cm, na.rm = TRUE),
+      minimo = base::min(temperatura_abrigo_150cm, na.rm = TRUE),
+      maximo = base::max(temperatura_abrigo_150cm, na.rm = TRUE),
       .groups = "drop"
     )
 }
