@@ -1,9 +1,10 @@
 Package: meteoLite
 Title: Lectura y Análisis de Datos Meteorológicos
 Version: 0.0.0.9000
-Authors@R: 
-    person("Gaspar", "Alfonso", , "galfonso1@mail.austral.edu.ar", role = c("aut", "cre"))
-    person("Ingmar", "Bakker", , "ingmarbakker@mail.austral.edu.ar", role = c("aut", "cre"))
+Authors@R: c(
+    person("Gaspar", "Alfonso", email = "galfonso1@mail.austral.edu.ar", role = c("aut", "cre")),
+    person("Ingmar", "Bakker", email = "ingmarbakker@mail.austral.edu.ar", role = "aut")
+)
 Description: meteoLite facilita la lectura, análisis y visualización de datos meteorológicos 
     de distintas estaciones. 
     Su objetivo es ofrecer funciones simples y livianas para la exploración de variables
